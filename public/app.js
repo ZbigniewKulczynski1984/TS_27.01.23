@@ -1,4 +1,14 @@
 "use strict";
+class Invoice {
+    contructor(c, d, a) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+    format() {
+        return `${this.client} owes £${this.amount} for ${this.details}`;
+    }
+}
 // const anchor = document.querySelector('a')!;
 const form = document.querySelector('.new-item-form');
 const type = document.querySelector('#type');
