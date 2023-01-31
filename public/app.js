@@ -1,6 +1,6 @@
 "use strict";
 class Invoice {
-    contructor(c, d, a) {
+    constructor(c, d, a) {
         this.client = c;
         this.details = d;
         this.amount = a;

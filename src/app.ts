@@ -1,18 +1,18 @@
 class Invoice {
-	client: string;
-	details: string;
-	amount: number;
-
-	contructor(c: string, d: string, a: number) {
-		this.client = c;
-		this.details = d;
-		this.amount = a;
-	}
-
-	format() {
-		return `${this.client} owes £${this.amount} for ${this.details}`;
-	}
-}
+    client: string;
+    details: string;
+    amount: number;
+  
+    constructor(c: string, d: string, a: number){
+      this.client = c;
+      this.details = d;
+      this.amount = a;
+    }
+  
+    format() {
+      return `${this.client} owes £${this.amount} for ${this.details}`;
+    }
+  }
 
 // const anchor = document.querySelector('a')!;
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
